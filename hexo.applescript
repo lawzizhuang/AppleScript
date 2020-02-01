@@ -1,5 +1,5 @@
 
-set SourceFolder to "/Users/ouyang/Dropbox/gblog/source"
+set SourceFolder to "/Users/ouyang/Documents/gblog/source"
 
 
 if application "Visual Studio Code" is running then 
