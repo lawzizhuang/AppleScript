@@ -1,4 +1,5 @@
 tell application "Notes"
+	activate
 	tell default account
 		tell (current date) to get (its year as integer) & "-" & (its month as integer) & "-" & day
 		set dataText to the result as text
