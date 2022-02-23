@@ -1,5 +1,5 @@
 tell application "Terminal"
-	activate
+	--activate
 	do script "cd ~/desktop/PDFmerge"
 end tell
 

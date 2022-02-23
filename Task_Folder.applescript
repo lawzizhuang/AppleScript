@@ -1,12 +1,14 @@
+ # -*- coding: utf-8 -*- 
 
+set input1 to text returned of (display dialog "æœåŠ¡ä¸»ä½“" default answer "" buttons {"OK", "Cancel"} default button "OK" with title "æœåŠ¡ä¸»ä½“")
 
-set input1 to text returned of (display dialog "ÊäÈë·şÎñÖ÷Ìå" default answer "" buttons {"OK", "Cancel"} default button "OK" with title "ÇëÊäÈë")
-
-set input2 to text returned of (display dialog "ÊäÈëÈÎÎñÃû³Æ" default answer "" buttons {"OK", "Cancel"} default button "OK" with title "ÇëÊäÈë")
+set input2 to text returned of (display dialog "ä»»åŠ¡åç§°" default answer "" buttons {"OK", "Cancel"} default button "OK" with title "ä»»åŠ¡åç§°")
 
 
 tell application "Finder"
-	set p to path to desktop
+	set p to (the target of window 1)
+	--set p to the selection
+	--set p to path to desktop
 	set dateStamp to do shell script "/bin/date +%Y%m%d"
-	make new folder at p with properties {name:dateStamp &"-¡¾"& input1 &"¡¿"&input2}
+	make new folder at p with properties {name:dateStamp &"-ã€"& input1 &"ã€‘"&input2}
 end tell
