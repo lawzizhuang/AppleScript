@@ -6,7 +6,7 @@
 # @raycast.mode compact
 
 # Optional parameters:
-# @raycast.icon 🤖
+# @raycast.icon �ü§ñ
 
 # Documentation:
 # @raycast.author Ouyang
